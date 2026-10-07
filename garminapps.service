@@ -1,0 +1,11 @@
+[Unit]
+Description=My Python Stuff
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/nhi/coordinator.py 
+Restart=always
+User=nhi
+
+[Install]
+WantedBy=multi-user.target
